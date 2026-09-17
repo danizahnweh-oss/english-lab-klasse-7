@@ -1,0 +1,607 @@
+{
+  "checked": "2026-09-17",
+  "scope": "Bayern · Gymnasium · Englisch als 1. Fremdsprache · Lernstand Ende Klasse 6",
+  "sources": {
+    "5": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/5/englisch",
+    "6": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/6/englisch/1-fremdsprache",
+    "7": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/7/englisch/1-fremdsprache"
+  },
+  "revised_ids": [
+    "n-perfect-05",
+    "n-perfect-06",
+    "n-perfect-08",
+    "n-perfect-11",
+    "n-future-10",
+    "n-questions-12",
+    "n-modals-09",
+    "n-modals-10",
+    "n-modals-11",
+    "n-comparison-01",
+    "n-comparison-03",
+    "n-pronouns-11",
+    "n-pronouns-12",
+    "n-connectors-09"
+  ],
+  "question_grades": {
+    "n-present-01": [
+      5
+    ],
+    "n-present-02": [
+      5
+    ],
+    "n-present-03": [
+      5
+    ],
+    "n-present-04": [
+      5
+    ],
+    "n-present-05": [
+      5
+    ],
+    "n-present-06": [
+      5
+    ],
+    "n-present-07": [
+      5
+    ],
+    "n-present-08": [
+      5
+    ],
+    "n-present-09": [
+      5
+    ],
+    "n-present-10": [
+      5
+    ],
+    "n-present-11": [
+      5
+    ],
+    "n-present-12": [
+      5
+    ],
+    "n-past-01": [
+      5
+    ],
+    "n-past-02": [
+      5
+    ],
+    "n-past-03": [
+      5
+    ],
+    "n-past-04": [
+      5
+    ],
+    "n-past-05": [
+      5
+    ],
+    "n-past-06": [
+      6
+    ],
+    "n-past-07": [
+      6
+    ],
+    "n-past-08": [
+      5
+    ],
+    "n-past-09": [
+      5
+    ],
+    "n-past-10": [
+      5
+    ],
+    "n-past-11": [
+      5
+    ],
+    "n-past-12": [
+      6
+    ],
+    "n-perfect-01": [
+      6
+    ],
+    "n-perfect-02": [
+      6
+    ],
+    "n-perfect-03": [
+      6
+    ],
+    "n-perfect-04": [
+      6
+    ],
+    "n-perfect-05": [
+      6
+    ],
+    "n-perfect-06": [
+      6
+    ],
+    "n-perfect-07": [
+      6
+    ],
+    "n-perfect-08": [
+      6
+    ],
+    "n-perfect-09": [
+      5
+    ],
+    "n-perfect-10": [
+      6
+    ],
+    "n-perfect-11": [
+      6
+    ],
+    "n-perfect-12": [
+      6
+    ],
+    "n-future-01": [
+      6
+    ],
+    "n-future-02": [
+      6
+    ],
+    "n-future-03": [
+      6
+    ],
+    "n-future-04": [
+      6
+    ],
+    "n-future-05": [
+      6
+    ],
+    "n-future-06": [
+      6
+    ],
+    "n-future-07": [
+      6
+    ],
+    "n-future-08": [
+      6
+    ],
+    "n-future-09": [
+      6
+    ],
+    "n-future-10": [
+      6
+    ],
+    "n-future-11": [
+      6
+    ],
+    "n-future-12": [
+      6
+    ],
+    "n-questions-01": [
+      5
+    ],
+    "n-questions-02": [
+      5
+    ],
+    "n-questions-03": [
+      5
+    ],
+    "n-questions-04": [
+      5
+    ],
+    "n-questions-05": [
+      5
+    ],
+    "n-questions-06": [
+      5
+    ],
+    "n-questions-07": [
+      6
+    ],
+    "n-questions-08": [
+      6
+    ],
+    "n-questions-09": [
+      6
+    ],
+    "n-questions-10": [
+      6
+    ],
+    "n-questions-11": [
+      5
+    ],
+    "n-questions-12": [
+      6
+    ],
+    "n-modals-01": [
+      5
+    ],
+    "n-modals-02": [
+      6
+    ],
+    "n-modals-03": [
+      5
+    ],
+    "n-modals-04": [
+      6
+    ],
+    "n-modals-05": [
+      6
+    ],
+    "n-modals-06": [
+      6
+    ],
+    "n-modals-07": [
+      6
+    ],
+    "n-modals-08": [
+      6
+    ],
+    "n-modals-09": [
+      6
+    ],
+    "n-modals-10": [
+      6
+    ],
+    "n-modals-11": [
+      6
+    ],
+    "n-modals-12": [
+      6
+    ],
+    "n-comparison-01": [
+      6
+    ],
+    "n-comparison-02": [
+      6
+    ],
+    "n-comparison-03": [
+      6
+    ],
+    "n-comparison-04": [
+      6
+    ],
+    "n-comparison-05": [
+      6
+    ],
+    "n-comparison-06": [
+      6
+    ],
+    "n-comparison-07": [
+      6
+    ],
+    "n-comparison-08": [
+      6
+    ],
+    "n-comparison-09": [
+      6
+    ],
+    "n-comparison-10": [
+      6
+    ],
+    "n-comparison-11": [
+      6
+    ],
+    "n-comparison-12": [
+      6
+    ],
+    "n-quantifiers-01": [
+      5
+    ],
+    "n-quantifiers-02": [
+      5
+    ],
+    "n-quantifiers-03": [
+      5
+    ],
+    "n-quantifiers-04": [
+      5
+    ],
+    "n-quantifiers-05": [
+      6
+    ],
+    "n-quantifiers-06": [
+      6
+    ],
+    "n-quantifiers-07": [
+      5
+    ],
+    "n-quantifiers-08": [
+      5
+    ],
+    "n-quantifiers-09": [
+      6
+    ],
+    "n-quantifiers-10": [
+      5
+    ],
+    "n-quantifiers-11": [
+      5
+    ],
+    "n-quantifiers-12": [
+      6
+    ],
+    "n-pronouns-01": [
+      5
+    ],
+    "n-pronouns-02": [
+      5
+    ],
+    "n-pronouns-03": [
+      5
+    ],
+    "n-pronouns-04": [
+      5
+    ],
+    "n-pronouns-05": [
+      5
+    ],
+    "n-pronouns-06": [
+      5
+    ],
+    "n-pronouns-07": [
+      5
+    ],
+    "n-pronouns-08": [
+      5
+    ],
+    "n-pronouns-09": [
+      5
+    ],
+    "n-pronouns-10": [
+      5
+    ],
+    "n-pronouns-11": [
+      5
+    ],
+    "n-pronouns-12": [
+      5
+    ],
+    "n-relatives-01": [
+      6
+    ],
+    "n-relatives-02": [
+      6
+    ],
+    "n-relatives-03": [
+      6
+    ],
+    "n-relatives-04": [
+      6
+    ],
+    "n-relatives-05": [
+      6
+    ],
+    "n-relatives-06": [
+      6
+    ],
+    "n-relatives-07": [
+      6
+    ],
+    "n-relatives-08": [
+      6
+    ],
+    "n-relatives-09": [
+      6
+    ],
+    "n-relatives-10": [
+      6
+    ],
+    "n-relatives-11": [
+      6
+    ],
+    "n-relatives-12": [
+      6
+    ],
+    "n-prepositions-01": [
+      5,
+      6
+    ],
+    "n-prepositions-02": [
+      5,
+      6
+    ],
+    "n-prepositions-03": [
+      5,
+      6
+    ],
+    "n-prepositions-04": [
+      5,
+      6
+    ],
+    "n-prepositions-05": [
+      5,
+      6
+    ],
+    "n-prepositions-06": [
+      5,
+      6
+    ],
+    "n-prepositions-07": [
+      5,
+      6
+    ],
+    "n-prepositions-08": [
+      5,
+      6
+    ],
+    "n-prepositions-09": [
+      5,
+      6
+    ],
+    "n-prepositions-10": [
+      5,
+      6
+    ],
+    "n-prepositions-11": [
+      5,
+      6
+    ],
+    "n-prepositions-12": [
+      5,
+      6
+    ],
+    "n-connectors-01": [
+      5
+    ],
+    "n-connectors-02": [
+      5
+    ],
+    "n-connectors-03": [
+      5
+    ],
+    "n-connectors-04": [
+      5
+    ],
+    "n-connectors-05": [
+      6
+    ],
+    "n-connectors-06": [
+      6
+    ],
+    "n-connectors-07": [
+      6
+    ],
+    "n-connectors-08": [
+      5
+    ],
+    "n-connectors-09": [
+      5
+    ],
+    "n-connectors-10": [
+      6
+    ],
+    "n-connectors-11": [
+      6
+    ],
+    "n-connectors-12": [
+      6
+    ],
+    "n-plural-01": [
+      5
+    ],
+    "n-plural-02": [
+      5
+    ],
+    "n-plural-03": [
+      5
+    ],
+    "n-plural-04": [
+      5
+    ],
+    "n-plural-05": [
+      5
+    ],
+    "n-plural-06": [
+      5
+    ],
+    "n-plural-07": [
+      5
+    ],
+    "n-plural-08": [
+      5
+    ],
+    "n-plural-09": [
+      5
+    ],
+    "n-plural-10": [
+      5
+    ],
+    "n-plural-11": [
+      5
+    ],
+    "n-plural-12": [
+      5
+    ],
+    "n-words-01": [
+      5,
+      6
+    ],
+    "n-words-02": [
+      5,
+      6
+    ],
+    "n-words-03": [
+      5,
+      6
+    ],
+    "n-words-04": [
+      5,
+      6
+    ],
+    "n-words-05": [
+      5,
+      6
+    ],
+    "n-words-06": [
+      5,
+      6
+    ],
+    "n-words-07": [
+      5,
+      6
+    ],
+    "n-words-08": [
+      5,
+      6
+    ],
+    "n-words-09": [
+      5,
+      6
+    ],
+    "n-words-10": [
+      5,
+      6
+    ],
+    "n-words-11": [
+      5,
+      6
+    ],
+    "n-words-12": [
+      5,
+      6
+    ]
+  },
+  "chapter_grades": {
+    "present": [
+      5
+    ],
+    "past": [
+      5,
+      6
+    ],
+    "perfect": [
+      5,
+      6
+    ],
+    "future": [
+      6
+    ],
+    "questions": [
+      5,
+      6
+    ],
+    "modals": [
+      5,
+      6
+    ],
+    "comparison": [
+      6
+    ],
+    "quantifiers": [
+      5,
+      6
+    ],
+    "pronouns": [
+      5
+    ],
+    "relatives": [
+      6
+    ],
+    "prepositions": [
+      5,
+      6
+    ],
+    "connectors": [
+      5,
+      6
+    ],
+    "plural": [
+      5
+    ],
+    "words": [
+      5,
+      6
+    ]
+  }
+}

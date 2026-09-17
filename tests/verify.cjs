@@ -6,6 +6,13 @@ function load(saved){const dom=new JSDOM(html,{url:'https://example.org/',runScr
 let dom=load(),w=dom.window;const ev=s=>w.testEval(s);function route(s){w.location.hash=s;ev('render(false)');}function click(s){w.document.querySelector(s).click();}function input(el,v){el.value=v;el.dispatchEvent(new w.Event('input',{bubbles:true}));}
 (async()=>{
 const D=w.LAB_DATA,EX=w.EXAMS;assert.equal(D.questions.length,168);assert.equal(D.grammar.length,14);assert.equal(new Set(D.questions.map(q=>q.id)).size,168);
+assert.equal(D.curriculum.scope,'Bayern · Gymnasium · Englisch als 1. Fremdsprache · Lernstand Ende Klasse 6');
+for(const item of [...D.questions,...D.grammar])assert(item.curriculumGrades.length&&item.curriculumGrades.every(g=>g===5||g===6));
+assert.equal(D.questions.filter(q=>q.id.endsWith('-lp56')).length,14);
+assert(!D.questions.some(q=>/myself|yours|\bours\b|I have lived here|We have waited/.test(q.prompt)));
+assert(!D.grammar.some(t=>t.forms.some(f=>/myself|ourselves|since Monday|when she arrives|mine, yours/i.test(f))));
+assert(D.questions.some(q=>q.prompt.includes('timetable')));
+
 for(const q of D.questions){assert(q.year===0);for(const a of q.answers)assert(ev(`matchAnswer(D.questions.find(q=>q.id===${JSON.stringify(q.id)}),${JSON.stringify(a)})`));ev(`state.session={kind:'topic',ids:[${JSON.stringify(q.id)}],index:0,responses:{}}`);route('quiz');assert(w.document.querySelector('#answer'));}
 for(const t of D.grammar){assert.equal(D.questions.filter(q=>q.topic===t.id).length,12);for(const l of ['basic','apply','transfer'])assert.equal(ev(`questionSet('topic','${t.id}','${l}').length`),4);}
 assert.equal(ev("questionSet('diagnostic').length"),12);for(let i=0;i<10;i++){const topics=ev("questionSet('mixed').map(q=>q.topic)");assert.equal(new Set(topics).size,12);}
@@ -51,5 +58,7 @@ for(const id of ['time','detective','workshop']){ev(`startSession('mission','${i
 assert(ev('earnedBadges()[3].earned'));route('exam/2025');assert(!w.document.querySelector('.mission-board,.mission-trail,.badge-shelf,.mission-finish'));
 ev('save()');const missionSaved=w.localStorage.getItem('english-lab-klasse-7-v1');dom.window.close();dom=load(missionSaved);w=dom.window;assert.equal(ev("bestStars('time')"),3);assert(ev('earnedBadges()[2].earned'));assert(ev('earnedBadges()[3].earned'));
 const legacy=JSON.parse(missionSaved);delete legacy.data.missions;legacy.data.plan[0]=true;dom.window.close();dom=load(JSON.stringify(legacy));w=dom.window;assert.equal(ev("bestStars('time')"),0);assert.equal(ev('state.plan[0]'),true);assert(ev('stats().attempted>0'));dom.window.close();
-console.log('PASS: five-question missions, honest persistent stars, earned badges, legacy data migration, 168 independent answer keys, all topic levels, 100 original grammar keys, five 60-point exams, hidden solutions, 50-minute timers, score limits, saved drafts, navigation, asset links and labelled forms. Emulated DOM, no browser visual QA.');
+const oldContent={version:1,data:{answers:{'n-perfect-05':{correct:true,answer:'since'},'n-present-01':{correct:true,answer:'walks'}},session:{kind:'diagnostic',ids:['n-perfect-05'],index:0,responses:{}},plan:{0:true},exams:{2025:{writing:'Keep this original test draft.'}}}};
+dom=load(JSON.stringify(oldContent));w=dom.window;assert.equal(ev('state.session'),null);assert.equal(ev('stats().correct'),1);assert.equal(ev("state.answers['n-perfect-05'].answer"),'since');assert.equal(ev("state.answers['n-perfect-05-lp56']"),undefined);assert.equal(ev('state.plan[0]'),true);assert.equal(ev('examState(2025).writing'),'Keep this original test draft.');dom.window.close();
+console.log('PASS: curriculum metadata, revised-question isolation and preserved legacy progress, five-question missions, honest persistent stars, earned badges, legacy data migration, 168 independent answer keys, all topic levels, 100 original grammar keys, five 60-point exams, hidden solutions, 50-minute timers, score limits, saved drafts, navigation, asset links and labelled forms. Emulated DOM, no browser visual QA.');
 })().catch(e=>{console.error(e);dom.window.close();process.exitCode=1;});

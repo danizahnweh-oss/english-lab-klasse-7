@@ -10,3 +10,6 @@ Reuse the calm, mobile-friendly English Lab class 10 design. Device-local progre
 
 ## Short grammar missions
 Five-question missions supplement the existing twelve-question rounds. They use new grammar exercises only. Each mission persists its best 0–3-star score in the existing local storage record, with safe defaults for old records. Answers retain a permanent recovered-error flag for the perseverance badge. The full original examinations and audio remain separate and unchanged.
+
+## Verified prerequisite scope
+Official LehrplanPLUS E5/E6, Gymnasium Bayern, English as first foreign language; E7 used to exclude later material. Audit dated 2026-09-17 covers all 168 authored practice items and 14 chapters. See content/LEHRPLANABGLEICH.md and the machine-readable content/curriculum.json. Revised questions use new versioned IDs so old answers cannot be credited to a changed task; unrelated stored progress and original exams remain intact. This is a test-focused selection, not complete coverage of every curriculum goal.

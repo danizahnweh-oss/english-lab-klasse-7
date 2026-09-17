@@ -29,13 +29,13 @@ I have ___ (finish) my project.|finished|Das present perfect besteht aus have/ha
 She has ___ (write) three emails.|written|Die dritte Form von write lautet written.
 We ___ (not / see) this film yet.|haven't seen;have not seen|Yet passt hier zum present perfect: have not seen.
 He ___ (lose) his key. He cannot open the door. Use the present perfect.|has lost|Das Ergebnis wirkt jetzt: has + lost.
-I have lived here ___ 2020. (since / for)|since|Since nennt den Startpunkt eines Zeitraums.
-We have waited ___ twenty minutes. (since / for)|for|For nennt die Dauer: zwanzig Minuten.
+The floor is clean now. Tom ___ (clean) it. Use the present perfect.|has cleaned|Das Ergebnis ist jetzt sichtbar: Der Boden ist sauber. Tom verlangt has + cleaned.
+We can eat now. Mum ___ (make) dinner. Use the present perfect.|has made|Das Essen ist jetzt fertig. Make hat die dritte Form made: has made.
 Lily ___ (just / arrive). Use the present perfect.|has just arrived|Just steht zwischen has und der dritten Verbform.
-I ___ (never / ride) a horse. Use the present perfect.|have never ridden|Eine Erfahrung bis heute: have never + ridden.
+I cannot find my glasses. I ___ (lose) them. Use the present perfect.|have lost|Die Brille fehlt jetzt: have + lost beschreibt das Ergebnis einer vergangenen Handlung.
 Choose: We ___ our cousins last Sunday. (visited / have visited)|visited|Last Sunday ist ein abgeschlossener Zeitpunkt: simple past.
 Correct the verb phrase: Sam has went home.|has gone|Nach has braucht man gone, die dritte Form von go.
-Complete: Have you ever ___ (break) a bone?|broken|Break → broke → broken; nach have die dritte Form.
+Ben cannot play today. He has ___ (break) his arm.|broken|Der Arm ist jetzt verletzt. Nach has steht die dritte Form broken.
 She ___ (not / do) her homework yet.|hasn't done;has not done|She verlangt has; die dritte Form von do ist done.
 # future
 I think it ___ (rain) tomorrow. Use will.|will rain|'I think' führt oft eine Vorhersage ein: will + Grundform.
@@ -47,7 +47,7 @@ I promise I ___ (help) you. Use will.|will help|Ein Versprechen drückt man mit 
 She ___ (not / buy) a car next year. Use going to.|isn't going to buy;is not going to buy|Der verneinte Plan: isn't going to + Grundform.
 If Max ___ (be) late, we will phone him.|is|Bei einer möglichen zukünftigen Bedingung: if + simple present.
 Correct the if-clause: If she will win, we will celebrate. Write only the correction for will win.|wins|Im if-Satz Typ 1 steht wins statt will win.
-When the bus ___ (arrive), we will get on.|arrives|Auch nach when steht hier simple present für die Zukunft.
+According to the timetable, the bus ___ (leave) at nine tomorrow. Use the simple present.|leaves|Ein Fahrplan für die Zukunft steht im simple present: the bus leaves. Das heißt timetable-future.
 Choose: I am sure you ___ the game. (will enjoy / enjoyed)|will enjoy|Die Erwartung bezieht sich auf die Zukunft: will enjoy.
 Complete: If we leave now, we ___ (not / miss) the train. Use will.|won't miss;will not miss|Der Hauptsatz braucht will not + Grundform.
 # questions
@@ -62,7 +62,7 @@ Complete the question tag: She didn't call, ___?|did she|Negativer Hauptsatz →
 Complete the question tag: Leo has finished, ___?|hasn't he;has he not|Das Hilfsverb has aus dem present perfect wird im Anhang wiederholt.
 Complete the question tag using do: They have a cat, ___?|don't they;do they not|Have ist hier Vollverb; mit do lautet der Anhang don't they.
 Ask about the subject: Someone broke the window. ___ broke the window?|Who|Bei einer Frage nach dem Subjekt benötigt man hier kein did.
-Ask about the place: She went to York. Where ___?|did she go|Bei der Frage nach dem Ort: did + she + go.
+Complete the question: Who are you waiting ___? (for / to)|for|Wait for bedeutet auf jemanden warten. In dieser Frage steht die Präposition am Ende.
 # modals
 You must ___ (wear) a helmet.|wear|Nach einem Modalverb folgt die Grundform ohne to.
 I ___ swim when I was five. (could / can)|could|Could beschreibt eine Fähigkeit in der Vergangenheit.
@@ -72,14 +72,14 @@ Yesterday I ___ (must) stay at home. Use the past substitute form.|had to|Must h
 They ___ (be allowed) to leave early yesterday.|were allowed|Vergangene Erlaubnis bei they: were allowed to.
 She ___ (be able) to help tomorrow. Use will.|will be able|Die Zukunft von can: will be able to; das to steht bereits im Satz.
 We ___ (not / be allowed) to take photos yesterday.|weren't allowed;were not allowed|Verbot in der Vergangenheit: were not allowed to.
-Correct only the verb phrase: He can speaks Spanish.|can speak|Nach can kein -s: can speak.
-Complete: You mustn't ___ (touch) that switch.|touch|Auch nach mustn't steht die Grundform.
-Choose: I ___ finish the work yesterday because the computer was broken. (couldn't / mustn't)|couldn't|Es war nicht möglich: couldn't. Mustn't drückt ein Verbot aus.
+You have a headache. You ___ rest. (should / mustn't)|should|Should + Grundform gibt einen Rat: Du solltest dich ausruhen.
+Ask politely for permission: ___ I open the window? (May / Mustn't)|May|May I …? ist eine höfliche Frage nach Erlaubnis.
+Perhaps it will rain later. It ___ rain. (might / mustn't)|might|Might + Grundform drückt eine Möglichkeit aus: Es könnte regnen.
 Use a form of have to: My brother ___ get up early every day.|has to|Bei he/she/it wird have to zu has to.
 # comparison
-My bag is ___ (heavy) than yours.|heavier|Bei heavy: y → i, dann -er.
+My bag is ___ (heavy) than your bag.|heavier|Bei heavy: y → i, dann -er.
 This is the ___ (small) room in our house.|smallest|Der Superlativ von small lautet smallest.
-My new shoes are ___ (good) than my old ones.|better|Good hat die unregelmäßige Steigerung better.
+My new shoes are ___ (good) than my old shoes.|better|Good hat die unregelmäßige Steigerung better.
 This is the ___ (bad) day of the week.|worst|Bad → worse → worst.
 This book is ___ (interesting) than that one.|more interesting|Lange Adjektive steigert man mit more.
 This is the ___ (beautiful) garden in town.|most beautiful|Der Superlativ langer Adjektive: most + Adjektiv.
@@ -113,8 +113,8 @@ These toys belong to the children. They are the ___ toys.|children's|Children en
 Choose: The cat is washing ___ face. (its / it's)|its|Its zeigt Besitz. It's bedeutet it is oder it has.
 Choose: ___ happy with their new school. (Their / They're)|They're|They're ist die Kurzform von they are.
 Correct the possessive: This is my parents's car. Replace parents's.|parents'|Parents ist ein regelmäßiger Plural; nur ein Apostroph folgt.
-Choose: These books are ___. (our / ours)|ours|Ohne folgendes Nomen steht das selbstständige Possessivpronomen ours.
-Choose: I made this cake ___. (myself / me)|myself|Myself betont: ich selbst habe es gemacht.
+Choose: ___ books here on my desk are new. (This / These)|These|These steht bei mehreren Dingen in der Nähe. This steht bei einem einzelnen Ding.
+Choose: Is there ___ at the door? (anybody / anything)|anybody|Bei einer Frage nach einer Person verwendet man anybody. Anything bezieht sich auf Dinge.
 # relatives
 A nurse is a person ___ helps sick people. (who / which)|who|Für Menschen verwendet man who.
 This is the bike ___ I bought yesterday. (who / which)|which|Für Dinge passt which.
@@ -150,7 +150,7 @@ ___ I was cooking, my brother set the table. (While / During)|While|Nach while f
 We visited a castle ___ the holidays. (during / while)|during|Nach during folgt ein Nomen, hier the holidays.
 ___ he was tired, he finished the puzzle. (Although / Because)|Although|Although drückt einen Gegensatz aus: obwohl er müde war.
 First we ate. ___ we went outside. (Then / Than)|Then|Then ordnet zeitlich. Than gehört zu Vergleichen.
-Choose: Call me ___ you arrive tonight. (when / during)|when|When leitet einen Zeitsatz ein und passt vor you arrive.
+Choose: We wash our hands ___ we eat. (before / during)|before|Before verbindet hier zwei Handlungen in ihrer üblichen Reihenfolge: bevor wir essen.
 Choose: ___ it rains tomorrow, we will cancel the picnic. (If / During)|If|If nennt eine Bedingung, deren Eintreten offen ist.
 Correct while: We couldn't play outside while the storm. Replace only while.|during|Vor der Nominalgruppe the storm muss during stehen.
 Choose: We left early ___ we could catch the bus. (so that / although)|so that|So that drückt den Zweck aus: damit wir den Bus erreichen konnten.
