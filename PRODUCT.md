@@ -7,3 +7,6 @@ German Gymnasium class 7, independent preparation on phone or desktop.
 Independent grammar practice with German explanations, then complete editable original exams 2021–2025. Listening only inside exams. No separate writing exercises. Undated learning sequence, public without login.
 ## Design
 Reuse the calm, mobile-friendly English Lab class 10 design. Device-local progress, immediate feedback.
+
+## Short grammar missions
+Five-question missions supplement the existing twelve-question rounds. They use new grammar exercises only. Each mission persists its best 0–3-star score in the existing local storage record, with safe defaults for old records. Answers retain a permanent recovered-error flag for the perseverance badge. The full original examinations and audio remain separate and unchanged.

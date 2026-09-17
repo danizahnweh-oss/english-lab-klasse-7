@@ -34,6 +34,22 @@ for(const [y,e] of Object.entries(EX)){
 route('exam/2021');ev('examState(2021).submitted=true');route('exam/2021');let select=w.document.querySelector('[data-exam-self="l:8"]');assert([...select.options].some(o=>o.value==='3'));select.value='2.5';select.dispatchEvent(new w.Event('change',{bubbles:true}));assert.equal(ev("examState(2021).self['l:8']"),'2.5');
 assert(ev("!examGrammarCorrect(EX[2022].grammar[0],'australian')"));assert(ev("!matchAnswer(D.questions.find(q=>q.id==='n-words-07'),'british')"));
 const before=ev('JSON.stringify(state)');assert.throws(()=>tools.start_grammar_practice.execute({topic:'not-real'}));assert.equal(ev('JSON.stringify(state)'),before);tools.start_grammar_practice.execute({topic:'past'});assert.equal(ev('state.session.ids.length'),12);
-ev('save()');const saved=w.localStorage.getItem('english-lab-klasse-7-v1');dom.window.close();dom=load(saved);w=dom.window;assert.equal(ev('examState(2025).writing'),'A message to my friend.');assert.equal(ev('state.plan[0]'),true);dom.window.close();
-console.log('PASS: 168 independent answer keys, all topic levels, 100 original grammar keys, five 60-point exams, hidden solutions, 50-minute timers, score limits, saved drafts, navigation, asset links and labelled forms. Emulated DOM, no browser visual QA.');
+ev('save()');const saved=w.localStorage.getItem('english-lab-klasse-7-v1');dom.window.close();dom=load(saved);w=dom.window;assert.equal(ev('examState(2025).writing'),'A message to my friend.');assert.equal(ev('state.plan[0]'),true);
+// Missions reward actual answers; skipping and replaying cannot inflate the best score.
+ev('state=defaults()');
+for(const id of ['time','detective','workshop']){const qs=ev(`questionSet('mission','${id}')`);assert.equal(qs.length,5);assert.equal(new Set(qs.map(q=>q.id)).size,5);assert(qs.every(q=>ev(`MISSIONS.find(m=>m.id==='${id}').topics.includes('${q.topic}')`)));}
+assert.equal(ev("questionSet('mission','invalid').length"),0);
+for(const [correct,stars] of [[0,0],[1,1],[2,1],[3,2],[4,2],[5,3]])assert.equal(ev(`missionStars(${correct})`),stars);
+ev("startSession('mission','time');render(false)");
+assert.equal(w.document.querySelectorAll('.mission-trail li').length,5);
+ev("checkAnswer('incorrect')");click('[data-action="next"]');
+for(let i=1;i<5;i++){ev('checkAnswer(D.questions.find(q=>q.id===state.session.ids[state.session.index]).answers[0])');click('[data-action="next"]');}
+assert.equal(ev("bestStars('time')"),2);assert(w.document.querySelector('.mission-finish').textContent.includes('2 von 3 Sternen'));assert(ev('earnedBadges()[0].earned'));
+const wrong=ev('state.session.ids[0]');ev(`state.session={kind:'mistakes',ids:['${wrong}'],index:0,responses:{}};render(false);checkAnswer(D.questions.find(q=>q.id==='${wrong}').answers[0])`);assert(ev('earnedBadges()[2].earned'));
+ev("startSession('mission','time');render(false)");for(let i=0;i<5;i++)click('[data-action="skip"]');assert.equal(ev("bestStars('time')"),2);assert(w.document.querySelector('.mission-finish').textContent.includes('0 von 3 Sternen'));
+for(const id of ['time','detective','workshop']){ev(`startSession('mission','${id}');render(false)`);for(let i=0;i<5;i++){ev('checkAnswer(D.questions.find(q=>q.id===state.session.ids[state.session.index]).answers[0])');click('[data-action="next"]');}assert.equal(ev(`bestStars('${id}')`),3);}
+assert(ev('earnedBadges()[3].earned'));route('exam/2025');assert(!w.document.querySelector('.mission-board,.mission-trail,.badge-shelf,.mission-finish'));
+ev('save()');const missionSaved=w.localStorage.getItem('english-lab-klasse-7-v1');dom.window.close();dom=load(missionSaved);w=dom.window;assert.equal(ev("bestStars('time')"),3);assert(ev('earnedBadges()[2].earned'));assert(ev('earnedBadges()[3].earned'));
+const legacy=JSON.parse(missionSaved);delete legacy.data.missions;legacy.data.plan[0]=true;dom.window.close();dom=load(JSON.stringify(legacy));w=dom.window;assert.equal(ev("bestStars('time')"),0);assert.equal(ev('state.plan[0]'),true);assert(ev('stats().attempted>0'));dom.window.close();
+console.log('PASS: five-question missions, honest persistent stars, earned badges, legacy data migration, 168 independent answer keys, all topic levels, 100 original grammar keys, five 60-point exams, hidden solutions, 50-minute timers, score limits, saved drafts, navigation, asset links and labelled forms. Emulated DOM, no browser visual QA.');
 })().catch(e=>{console.error(e);dom.window.close();process.exitCode=1;});

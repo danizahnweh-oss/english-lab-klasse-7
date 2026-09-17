@@ -1,2 +1,5 @@
 # Visual system
 A focused afternoon study desk on a bright phone or laptop screen. White working surface, restrained crimson accent, dark ink, generous spacing. System sans for controls and prose. Desktop side navigation becomes horizontal wrapping navigation on narrow screens. Solid bordered sections, small radii, no decorative imagery. All study actions available using keyboard; feedback uses text and color.
+
+## Playful grammar practice
+Three compact five-question missions (Zeitreise, Satzdetektiv, Wortwerkstatt) use the independent grammar bank. Warm rose, pale blue and butter yellow distinguish the stations; tilted typographic tokens and a five-step trail add playfulness without introducing exam distractions. Mission stars require 1/3/5 correct answers and retain the best result. Badges reward starting, trying five topics, correcting a previous error, and collecting nine stars. No timers, competitive rankings, daily streaks or lost lives in practice. Animations respect reduced motion; status is also expressed in text. Mobile mission cards stack vertically.
