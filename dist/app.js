@@ -50,13 +50,21 @@ function exerciseAction(action,value){const s=state.session,q=s&&D.questions.fin
  save();render(false);$(focus)?.focus({preventScroll:true});
 }
 
-function earnedBadges(){const answers=D.questions.filter(q=>state.answers[q.id]);return [
+function earnedBadges(){const answers=D.questions.filter(q=>state.answers[q.id]),solved=answers.filter(q=>{const a=state.answers[q.id];return a.correct||a.everCorrect||a.firstCorrect;}),count=type=>solved.filter(q=>q.type===type).length,stars=D.grammar.reduce((n,t)=>n+topicProgress(t.id).stars,0);return [
  {name:'Losgelegt!',icon:'→',hint:'Beantworte deine erste Frage.',earned:answers.length>0},
  {name:'Entdeckertalent',icon:'✦',hint:'Probiere 5 Grammatikthemen aus.',earned:new Set(answers.map(q=>q.topic)).size>=5},
  {name:'Drangeblieben',icon:'↻',hint:'Löse einen früheren Fehler richtig.',earned:answers.some(q=>state.answers[q.id].recovered)},
- {name:'Sternensammler',icon:'★',hint:'Sammle alle 9 Missionssterne.',earned:MISSIONS.every(m=>bestStars(m.id)===3)}
+ {name:'Sternensammler',icon:'★',hint:'Sammle alle 9 Missionssterne.',earned:MISSIONS.every(m=>bestStars(m.id)===3)},
+ {name:'Puzzleprofi',icon:'↔',hint:'Löse 5 verschiedene Satzpuzzles.',earned:count('order')>=5},
+ {name:'Spürnase',icon:'⌕',hint:'Finde den Fehler in 5 verschiedenen Sätzen.',earned:count('error')>=5},
+ {name:'Wortakrobat',icon:'✎',hint:'Löse 10 verschiedene Schreibaufgaben richtig.',earned:count('input')>=10},
+ {name:'Treffsicher',icon:'✓',hint:'Löse 10 verschiedene Auswahlaufgaben richtig.',earned:count('choice')>=10},
+ {name:'Rundum fit',icon:'✧',hint:'Löse in jeder der 4 Übungsformen eine Aufgabe richtig.',earned:['input','choice','order','error'].every(type=>count(type)>0)},
+ {name:'Themenchampion',icon:'♜',hint:'Sammle alle 3 Sterne in einem Grammatikthema.',earned:D.grammar.some(t=>topicProgress(t.id).stars===3)},
+ {name:'Sternenreisender',icon:'☄',hint:'Sammle 21 Grammatiksterne.',earned:stars>=21},
+ {name:'Milos Lernheld',icon:'♛',hint:'Sammle alle 42 Grammatiksterne.',earned:stars===42}
  ];}
-function badgeShelf(){const badges=earnedBadges();return `<section class="badge-shelf" aria-labelledby="badge-heading"><div class="row"><h2 id="badge-heading">Deine Lernabzeichen</h2><span class="meta">${badges.filter(b=>b.earned).length} / ${badges.length} gesammelt</span></div><ul class="badge-list">${badges.map(b=>`<li class="${b.earned?'earned':''}"><span class="badge-token" aria-hidden="true">${b.icon}</span><div><strong>${b.name}</strong><span class="meta">${b.earned?'✓ Gesammelt':b.hint}</span></div></li>`).join('')}</ul></section>`;}
+function badgeShelf(){const badges=earnedBadges();return `<section class="badge-shelf" aria-labelledby="badge-heading"><div class="row"><h2 id="badge-heading">Deine Lernabzeichen</h2><span class="meta">${badges.filter(b=>b.earned).length} / ${badges.length} gesammelt</span></div><ul class="badge-list">${badges.map(b=>`<li class="${b.earned?'earned':''}"><span class="badge-token" aria-hidden="true">${b.icon}</span><div><strong>${b.name}</strong><span class="meta">${b.earned?'✓ Gesammelt<br>':''}${b.hint}</span></div></li>`).join('')}</ul></section>`;}
 function finishMission(){const s=state.session;if(s?.kind!=='mission'||s.index<s.ids.length)return;const n=s.ids.filter(id=>s.responses[id]?.correct).length;state.missions[s.value]=Math.max(bestStars(s.value),missionStars(n));}
 function missionTrail(s){return `<ol class="mission-trail" aria-label="Deine fünf Missionsaufgaben">${s.ids.map((id,i)=>{const r=s.responses[id];const text=r?(r.correct?'richtig':'noch üben'):i<s.index?'übersprungen':i===s.index?'aktuell':'offen';return `<li class="${r?.correct?'solved':i===s.index?'current':''}" ${i===s.index?'aria-current="step"':''}><span aria-hidden="true">${r?.correct?'✓':i+1}</span><span class="sr-only">Aufgabe ${i+1}: ${text}</span></li>`;}).join('')}</ol>`;}
 

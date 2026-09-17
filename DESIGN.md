@@ -11,3 +11,6 @@ Mascot: `dist/mascot/milo.png`, generated with the built-in image generation too
 
 ## Multiple grammar interactions
 Native radio controls offer answer selection. Error hunts select a single word group with pressed-state buttons. Sentence puzzles use keyboard- and touch-operable token buttons, with undo and clear controls, no drag requirement. All formats share submit/feedback/next actions. The topic-star panel explains the 5/10/14 distinct-task thresholds and appears on practice, home and progress views; chapter cards and feedback show local topic progress. No earned stars are removed.
+
+## Expanded badge collection
+Twelve badges now cover getting started, breadth, recovering from mistakes, mission stars, each of the four exercise formats, mixing formats, mastering a topic, and collecting 21 or 42 grammar stars. Conditions remain visible after earning an award. Counts use distinct successfully solved tasks and honour previously saved successes, including later incorrect retries.
