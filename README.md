@@ -2,7 +2,7 @@
 
 A public, mobile-friendly self-study site for a German Gymnasium class 7. It follows the English Lab class 10 design, but uses the supplied class 7 exams and its own independent practice bank. No fixed study dates or assumed exam date.
 
-- 168 newly authored grammar exercises, 14 German reference chapters, three levels per topic.
+- 196 newly authored grammar exercises (95 text inputs, 73 choices, 14 sentence puzzles and 14 error hunts), 14 German reference chapters, three levels per topic.
 - Independent diagnostic, mixed rounds, feedback and mistake practice. Original questions are not used in advance practice.
 - Complete editable original tests 2021–2025: listening (20 BE), Use of English (20 BE), text production (20 BE). Optional 50-minute timer.
 - Original audio, picture choices and writing materials included. Original correction exercises and word boxes retained, with mobile-adapted layout and numbered answer fields.

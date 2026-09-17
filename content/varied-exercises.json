@@ -1,0 +1,584 @@
+[
+  {
+    "id": "v-present-order",
+    "topic": "present",
+    "type": "order",
+    "parts": [
+      "Mia",
+      "plays",
+      "tennis",
+      "every Sunday."
+    ],
+    "prompt": "Baue den Satz. Beginne mit „Mia“.",
+    "instruction": "Tippe die Bausteine in der richtigen Reihenfolge an. Angetippte Bausteine kannst du wieder zurücklegen.",
+    "answers": [
+      "Mia plays tennis every Sunday."
+    ],
+    "explanation": "Mia spielt regelmäßig Tennis: simple present mit -s.",
+    "curriculumGrades": [
+      5
+    ]
+  },
+  {
+    "id": "v-past-order",
+    "topic": "past",
+    "type": "order",
+    "parts": [
+      "We",
+      "were playing",
+      "outside",
+      "when",
+      "it",
+      "started to rain."
+    ],
+    "prompt": "Baue den Satz. Beginne mit „We“.",
+    "instruction": "Tippe die Bausteine in der richtigen Reihenfolge an. Angetippte Bausteine kannst du wieder zurücklegen.",
+    "answers": [
+      "We were playing outside when it started to rain."
+    ],
+    "explanation": "Were playing beschreibt die Hintergrundhandlung; started das neue Ereignis.",
+    "curriculumGrades": [
+      6
+    ]
+  },
+  {
+    "id": "v-perfect-order",
+    "topic": "perfect",
+    "type": "order",
+    "parts": [
+      "Tom",
+      "has",
+      "cleaned",
+      "his room."
+    ],
+    "prompt": "Baue den Satz. Beginne mit „Tom“.",
+    "instruction": "Tippe die Bausteine in der richtigen Reihenfolge an. Angetippte Bausteine kannst du wieder zurücklegen.",
+    "answers": [
+      "Tom has cleaned his room."
+    ],
+    "explanation": "Das Zimmer ist jetzt sauber: has + cleaned zeigt das Ergebnis.",
+    "curriculumGrades": [
+      6
+    ]
+  },
+  {
+    "id": "v-future-order",
+    "topic": "future",
+    "type": "order",
+    "parts": [
+      "If it rains,",
+      "we",
+      "will",
+      "stay",
+      "at home."
+    ],
+    "prompt": "Baue den Satz. Beginne mit „If it rains,“.",
+    "instruction": "Tippe die Bausteine in der richtigen Reihenfolge an. Angetippte Bausteine kannst du wieder zurücklegen.",
+    "answers": [
+      "If it rains, we will stay at home."
+    ],
+    "explanation": "Im if-Teil steht simple present; im Hauptsatz will + Grundform.",
+    "curriculumGrades": [
+      6
+    ]
+  },
+  {
+    "id": "v-questions-order",
+    "topic": "questions",
+    "type": "order",
+    "parts": [
+      "Where",
+      "did",
+      "you",
+      "buy",
+      "this book?"
+    ],
+    "prompt": "Baue den Satz. Beginne mit „Where“.",
+    "instruction": "Tippe die Bausteine in der richtigen Reihenfolge an. Angetippte Bausteine kannst du wieder zurücklegen.",
+    "answers": [
+      "Where did you buy this book?"
+    ],
+    "explanation": "Fragewort + did + Person + Grundform: Where did you buy …?",
+    "curriculumGrades": [
+      5
+    ]
+  },
+  {
+    "id": "v-modals-order",
+    "topic": "modals",
+    "type": "order",
+    "parts": [
+      "You",
+      "should",
+      "drink",
+      "some water."
+    ],
+    "prompt": "Baue den Satz. Beginne mit „You“.",
+    "instruction": "Tippe die Bausteine in der richtigen Reihenfolge an. Angetippte Bausteine kannst du wieder zurücklegen.",
+    "answers": [
+      "You should drink some water."
+    ],
+    "explanation": "Should gibt einen Rat. Danach steht die Grundform drink ohne to.",
+    "curriculumGrades": [
+      6
+    ]
+  },
+  {
+    "id": "v-comparison-order",
+    "topic": "comparison",
+    "type": "order",
+    "parts": [
+      "This book",
+      "is",
+      "more interesting",
+      "than",
+      "that book."
+    ],
+    "prompt": "Baue den Satz. Beginne mit „This book“.",
+    "instruction": "Tippe die Bausteine in der richtigen Reihenfolge an. Angetippte Bausteine kannst du wieder zurücklegen.",
+    "answers": [
+      "This book is more interesting than that book."
+    ],
+    "explanation": "Lange Adjektive: more interesting; der Vergleich folgt mit than.",
+    "curriculumGrades": [
+      6
+    ]
+  },
+  {
+    "id": "v-quantifiers-order",
+    "topic": "quantifiers",
+    "type": "order",
+    "parts": [
+      "There",
+      "is not",
+      "much milk",
+      "in the fridge."
+    ],
+    "prompt": "Baue den Satz. Beginne mit „There“.",
+    "instruction": "Tippe die Bausteine in der richtigen Reihenfolge an. Angetippte Bausteine kannst du wieder zurücklegen.",
+    "answers": [
+      "There is not much milk in the fridge."
+    ],
+    "explanation": "Milk ist nicht zählbar. In der Verneinung passt much milk.",
+    "curriculumGrades": [
+      5
+    ]
+  },
+  {
+    "id": "v-pronouns-order",
+    "topic": "pronouns",
+    "type": "order",
+    "parts": [
+      "These",
+      "are",
+      "my",
+      "new shoes."
+    ],
+    "prompt": "Baue den Satz. Beginne mit „These“.",
+    "instruction": "Tippe die Bausteine in der richtigen Reihenfolge an. Angetippte Bausteine kannst du wieder zurücklegen.",
+    "answers": [
+      "These are my new shoes."
+    ],
+    "explanation": "These steht für mehrere Dinge; my steht vor dem Nomen shoes.",
+    "curriculumGrades": [
+      5
+    ]
+  },
+  {
+    "id": "v-relatives-order",
+    "topic": "relatives",
+    "type": "order",
+    "parts": [
+      "This is",
+      "the boy",
+      "who",
+      "lives",
+      "next door."
+    ],
+    "prompt": "Baue den Satz. Beginne mit „This is“.",
+    "instruction": "Tippe die Bausteine in der richtigen Reihenfolge an. Angetippte Bausteine kannst du wieder zurücklegen.",
+    "answers": [
+      "This is the boy who lives next door."
+    ],
+    "explanation": "Who bezieht sich auf den Jungen und ist Subjekt von lives.",
+    "curriculumGrades": [
+      6
+    ]
+  },
+  {
+    "id": "v-prepositions-order",
+    "topic": "prepositions",
+    "type": "order",
+    "parts": [
+      "We",
+      "meet",
+      "at seven",
+      "on Mondays."
+    ],
+    "prompt": "Baue den Satz. Beginne mit „We“.",
+    "instruction": "Tippe die Bausteine in der richtigen Reihenfolge an. Angetippte Bausteine kannst du wieder zurücklegen.",
+    "answers": [
+      "We meet at seven on Mondays."
+    ],
+    "explanation": "Uhrzeit mit at, Wochentag mit on.",
+    "curriculumGrades": [
+      5
+    ]
+  },
+  {
+    "id": "v-connectors-order",
+    "topic": "connectors",
+    "type": "order",
+    "parts": [
+      "Although",
+      "Ben was tired,",
+      "he",
+      "finished",
+      "the puzzle."
+    ],
+    "prompt": "Baue den Satz. Beginne mit „Although“.",
+    "instruction": "Tippe die Bausteine in der richtigen Reihenfolge an. Angetippte Bausteine kannst du wieder zurücklegen.",
+    "answers": [
+      "Although Ben was tired, he finished the puzzle."
+    ],
+    "explanation": "Although leitet einen Gegensatz ein: Ben war müde, hat aber das Rätsel gelöst.",
+    "curriculumGrades": [
+      6
+    ]
+  },
+  {
+    "id": "v-plural-order",
+    "topic": "plural",
+    "type": "order",
+    "parts": [
+      "The children",
+      "are",
+      "playing",
+      "in the garden."
+    ],
+    "prompt": "Baue den Satz. Beginne mit „The children“.",
+    "instruction": "Tippe die Bausteine in der richtigen Reihenfolge an. Angetippte Bausteine kannst du wieder zurücklegen.",
+    "answers": [
+      "The children are playing in the garden."
+    ],
+    "explanation": "Children ist Plural und verlangt are.",
+    "curriculumGrades": [
+      5
+    ]
+  },
+  {
+    "id": "v-words-order",
+    "topic": "words",
+    "type": "order",
+    "parts": [
+      "I",
+      "want",
+      "you",
+      "to help",
+      "me."
+    ],
+    "prompt": "Baue den Satz. Beginne mit „I“.",
+    "instruction": "Tippe die Bausteine in der richtigen Reihenfolge an. Angetippte Bausteine kannst du wieder zurücklegen.",
+    "answers": [
+      "I want you to help me."
+    ],
+    "explanation": "Want + Person + to + Verb: I want you to help me.",
+    "curriculumGrades": [
+      5
+    ]
+  },
+  {
+    "id": "v-present-error",
+    "topic": "present",
+    "type": "error",
+    "parts": [
+      "She",
+      "go",
+      "to school",
+      "every day."
+    ],
+    "prompt": "She go to school every day.",
+    "instruction": "Tippe auf den einen fehlerhaften Baustein.",
+    "answers": [
+      "go"
+    ],
+    "correctedSentence": "She goes to school every day.",
+    "explanation": "Bei she bekommt go im simple present ein -es: goes.",
+    "curriculumGrades": [
+      5
+    ]
+  },
+  {
+    "id": "v-past-error",
+    "topic": "past",
+    "type": "error",
+    "parts": [
+      "We",
+      "goed",
+      "to the zoo",
+      "yesterday."
+    ],
+    "prompt": "We goed to the zoo yesterday.",
+    "instruction": "Tippe auf den einen fehlerhaften Baustein.",
+    "answers": [
+      "goed"
+    ],
+    "correctedSentence": "We went to the zoo yesterday.",
+    "explanation": "Die Vergangenheitsform von go ist went.",
+    "curriculumGrades": [
+      5
+    ]
+  },
+  {
+    "id": "v-perfect-error",
+    "topic": "perfect",
+    "type": "error",
+    "parts": [
+      "Ben",
+      "has",
+      "went",
+      "home."
+    ],
+    "prompt": "Ben has went home.",
+    "instruction": "Tippe auf den einen fehlerhaften Baustein.",
+    "answers": [
+      "went"
+    ],
+    "correctedSentence": "Ben has gone home.",
+    "explanation": "Nach has steht die dritte Verbform gone.",
+    "curriculumGrades": [
+      6
+    ]
+  },
+  {
+    "id": "v-future-error",
+    "topic": "future",
+    "type": "error",
+    "parts": [
+      "If it",
+      "will rain,",
+      "we will stay",
+      "inside."
+    ],
+    "prompt": "If it will rain, we will stay inside.",
+    "instruction": "Tippe auf den einen fehlerhaften Baustein.",
+    "answers": [
+      "will rain,"
+    ],
+    "correctedSentence": "If it rains, we will stay inside.",
+    "explanation": "Im if-Teil steht bei Typ 1 rains, nicht will rain.",
+    "curriculumGrades": [
+      6
+    ]
+  },
+  {
+    "id": "v-questions-error",
+    "topic": "questions",
+    "type": "error",
+    "parts": [
+      "Where",
+      "did",
+      "she",
+      "went",
+      "yesterday?"
+    ],
+    "prompt": "Where did she went yesterday?",
+    "instruction": "Tippe auf den einen fehlerhaften Baustein.",
+    "answers": [
+      "went"
+    ],
+    "correctedSentence": "Where did she go yesterday?",
+    "explanation": "Did zeigt bereits die Vergangenheit; danach steht go.",
+    "curriculumGrades": [
+      5
+    ]
+  },
+  {
+    "id": "v-modals-error",
+    "topic": "modals",
+    "type": "error",
+    "parts": [
+      "He",
+      "can",
+      "speaks",
+      "English."
+    ],
+    "prompt": "He can speaks English.",
+    "instruction": "Tippe auf den einen fehlerhaften Baustein.",
+    "answers": [
+      "speaks"
+    ],
+    "correctedSentence": "He can speak English.",
+    "explanation": "Nach can steht speak ohne -s.",
+    "curriculumGrades": [
+      5
+    ]
+  },
+  {
+    "id": "v-comparison-error",
+    "topic": "comparison",
+    "type": "error",
+    "parts": [
+      "Anna",
+      "is taller",
+      "as",
+      "Ben."
+    ],
+    "prompt": "Anna is taller as Ben.",
+    "instruction": "Tippe auf den einen fehlerhaften Baustein.",
+    "answers": [
+      "as"
+    ],
+    "correctedSentence": "Anna is taller than Ben.",
+    "explanation": "Nach einer Steigerungsform steht than.",
+    "curriculumGrades": [
+      6
+    ]
+  },
+  {
+    "id": "v-quantifiers-error",
+    "topic": "quantifiers",
+    "type": "error",
+    "parts": [
+      "There is",
+      "too many",
+      "water",
+      "in the glass."
+    ],
+    "prompt": "There is too many water in the glass.",
+    "instruction": "Tippe auf den einen fehlerhaften Baustein.",
+    "answers": [
+      "too many"
+    ],
+    "correctedSentence": "There is too much water in the glass.",
+    "explanation": "Water ist nicht zählbar: too much water.",
+    "curriculumGrades": [
+      5
+    ]
+  },
+  {
+    "id": "v-pronouns-error",
+    "topic": "pronouns",
+    "type": "error",
+    "parts": [
+      "Their",
+      "are",
+      "two cats",
+      "outside."
+    ],
+    "prompt": "Their are two cats outside.",
+    "instruction": "Tippe auf den einen fehlerhaften Baustein.",
+    "answers": [
+      "Their"
+    ],
+    "correctedSentence": "There are two cats outside.",
+    "explanation": "There are heißt es gibt; their ist ein Besitzwort.",
+    "curriculumGrades": [
+      5
+    ]
+  },
+  {
+    "id": "v-relatives-error",
+    "topic": "relatives",
+    "type": "error",
+    "parts": [
+      "The girl",
+      "which",
+      "sits here",
+      "is Anna."
+    ],
+    "prompt": "The girl which sits here is Anna.",
+    "instruction": "Tippe auf den einen fehlerhaften Baustein.",
+    "answers": [
+      "which"
+    ],
+    "correctedSentence": "The girl who sits here is Anna.",
+    "explanation": "Für eine Person braucht man hier who oder that, nicht which.",
+    "curriculumGrades": [
+      6
+    ]
+  },
+  {
+    "id": "v-prepositions-error",
+    "topic": "prepositions",
+    "type": "error",
+    "parts": [
+      "My birthday",
+      "is",
+      "on",
+      "July."
+    ],
+    "prompt": "My birthday is on July.",
+    "instruction": "Tippe auf den einen fehlerhaften Baustein.",
+    "answers": [
+      "on"
+    ],
+    "correctedSentence": "My birthday is in July.",
+    "explanation": "Vor einem Monat steht in.",
+    "curriculumGrades": [
+      5
+    ]
+  },
+  {
+    "id": "v-connectors-error",
+    "topic": "connectors",
+    "type": "error",
+    "parts": [
+      "During",
+      "I was cooking,",
+      "Dad",
+      "called."
+    ],
+    "prompt": "During I was cooking, Dad called.",
+    "instruction": "Tippe auf den einen fehlerhaften Baustein.",
+    "answers": [
+      "During"
+    ],
+    "correctedSentence": "While I was cooking, Dad called.",
+    "explanation": "Vor einem ganzen Satz steht while; during steht vor einem Nomen.",
+    "curriculumGrades": [
+      6
+    ]
+  },
+  {
+    "id": "v-plural-error",
+    "topic": "plural",
+    "type": "error",
+    "parts": [
+      "Two",
+      "childs",
+      "are in",
+      "the park."
+    ],
+    "prompt": "Two childs are in the park.",
+    "instruction": "Tippe auf den einen fehlerhaften Baustein.",
+    "answers": [
+      "childs"
+    ],
+    "correctedSentence": "Two children are in the park.",
+    "explanation": "Der Plural von child ist children.",
+    "curriculumGrades": [
+      5
+    ]
+  },
+  {
+    "id": "v-words-error",
+    "topic": "words",
+    "type": "error",
+    "parts": [
+      "I am",
+      "looking after",
+      "my lost keys."
+    ],
+    "prompt": "I am looking after my lost keys.",
+    "instruction": "Tippe auf den einen fehlerhaften Baustein. Der Satz soll bedeuten: Ich suche meine verlorenen Schlüssel.",
+    "answers": [
+      "looking after"
+    ],
+    "correctedSentence": "I am looking for my lost keys.",
+    "explanation": "Gesucht ist suchen: look for. Look after bedeutet sich kümmern um.",
+    "curriculumGrades": [
+      5
+    ]
+  }
+]

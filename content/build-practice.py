@@ -1,4 +1,4 @@
-import json
+import json, re
 from pathlib import Path
 R=Path(__file__).resolve().parents[1]
 # id, title, short introduction, rules, examples, trap
@@ -9,7 +9,7 @@ chapters=[
 ('future','Zukunft & if-Sätze Typ 1','Pläne, Vorhersagen und mögliche Bedingungen.', ['Will + Grundform: Vorhersagen, spontane Entscheidungen, Versprechen.','Am/is/are going to + Grundform: Pläne oder sichtbare Anzeichen.','If + simple present, Hauptsatz mit will + Grundform.','Feste Fahrpläne: simple present für die Zukunft, z. B. The train leaves at nine tomorrow.','Bei Typ 1 kann der Hauptsatz auch can oder einen Imperativ enthalten: If you need help, ask me.','Allgemeine Bedingung: If I am tired, I go to bed. Beide Teilsätze stehen im simple present.','Will not = won’t. Going to wird über be verneint: isn’t going to.'],[['If it is sunny, we will cycle to the lake.','Mögliche Bedingung und ihre Folge.'],['We are going to visit Grandma.','Ein geplanter Besuch.']],'Nicht If it will rain, sondern If it rains.'),
 ('questions','Fragen & question tags','Hilfsverben richtig einsetzen.', ['Simple present: Do/Does + Person + Grundform?','Simple past: Did + Person + Grundform? Nach did keine Vergangenheitsform.','Be und Modalverben bilden Fragen ohne do: Are you ready? Can she swim?','Question tags: positiver Satz → negativer Anhang und umgekehrt.','Das Hilfsverb wiederholen: You have finished, haven’t you?','Have als Vollverb mit do: They have a dog, don’t they?','Frage nach dem Subjekt: Who called? Kein did nötig.','Fragen mit Präposition: Who are you waiting for? Die Präposition gehört zu wait for.'],[['Where did you stay?','Did + Grundform.'],['She isn’t here, is she?','Negativer Satz, positiver Anhang.']],'Question tags müssen zu Person und Zeitform des Hauptsatzes passen.'),
 ('modals','Modalverben & Ersatzformen','Können, müssen, dürfen und nicht müssen.', ['Nach can, could, must und mustn’t folgt die Grundform ohne to.','Can: Fähigkeit; could: Fähigkeit in der Vergangenheit.','May: Erlaubnis; might: Möglichkeit; should: Rat. Auch danach steht die Grundform ohne to.','Must / have to: Pflicht. Mustn’t: Verbot. Needn’t / don’t have to: nicht nötig.','Vergangenheit von must: had to. Erlaubnis: was/were allowed to.','Fähigkeit in anderen Zeiten: be able to, z. B. will be able to.','Bei he/she/it: has to. Frage: Does she have to …?'],[['We had to wait yesterday.','Pflicht in der Vergangenheit.'],['You don’t have to come, but you mustn’t be late if you do.','Nicht nötig und verboten sind unterschiedliche Aussagen.']],'Mustn’t bedeutet nicht dürfen, nicht nicht müssen.'),
-('comparison','Adjektive vergleichen','Steigerung und Vergleiche mit as und than.', ['Kurz: small–smaller–smallest. Verdoppeln: hot–hotter–hottest.','Konsonant + y: easy–easier–easiest.','Lang: interesting–more interesting–most interesting.','Unregelmäßig: good–better–best; bad–worse–worst.','Ungleich: bigger than. Gleich: as big as.','Der Superlativ steht oft mit the: the tallest girl.'],[['This path is shorter than that one.','Vergleich mit than.'],['My bike is as old as your bike.','Gleicher Grad mit as … as.']],'Nicht more easy oder as tall like.'),
+('comparison','Adjektive vergleichen','Steigerung und Vergleiche mit as und than.', ['Kurz: small–smaller–smallest. Verdoppeln: hot–hotter–hottest.','Konsonant + y: easy–easier–easiest.','Lang: interesting–more interesting–most interesting.','Unregelmäßig: good–better–best; bad–worse–worst.','Ungleich: bigger than. Gleich: as big as.','Der Superlativ steht oft mit the: the tallest girl.'],[['This path is shorter than that path.','Vergleich mit than.'],['My bike is as old as your bike.','Gleicher Grad mit as … as.']],'Nicht more easy oder as tall like.'),
 ('quantifiers','Mengenwörter','Much, many, some, any und a lot of.', ['Many, a few: zählbare Dinge im Plural (many books).','Much, a little: nicht zählbare Mengen (much water).','A lot of / lots of: beides möglich. Enough = genug.','Some meist in positiven Aussagen, any in neutralen Fragen und Verneinungen.','Bei Bitten und Angeboten oft some: Can I have some tea?','Most students = die meisten Schüler allgemein; most of the students = die meisten einer bestimmten Gruppe.'],[['There isn’t much time, but there are many questions.','Time ist nicht zählbar, questions schon.'],['Would you like some juice?','Angebot mit some.']],'People ist zählbar: many people, nicht much people.'),
 ('pronouns','Pronomen & Besitz','Their, there, they’re und der Apostroph.', ['Subjekte: I, you, he, she, it, we, they. Objekte: me, you, him, her, it, us, them.','Possessivbegleiter stehen vor einem Nomen: my, your, his, her, its, our, their.','There are = es gibt; their = ihr; they’re = they are.','Besitz: Mia’s bike. Regelmäßiger Plural: the girls’ room. Unregelmäßiger Plural: children’s toys.','Its zeigt Besitz; it’s heißt it is oder it has.','This/that: ein Ding; these/those: mehrere Dinge. This/these für Nähe, that/those für Entfernung.','Somebody/someone: jemand; anybody/anyone oft in Fragen; nobody/no one: niemand. Something/anything/nothing beziehen sich auf Dinge.'],[['Their friends are here. They’re in the kitchen.','Besitzwort und Kurzform unterscheiden.'],['This is my parents’ car.','Plural auf -s: nur Apostroph.']],'Ein einfacher Plural hat keinen Apostroph: two phones.'),
 ('relatives','Relativsätze','Personen und Dinge genauer beschreiben.', ['Who für Menschen; which für Dinge und Tiere. That kann beides ersetzen.','Whose zeigt Besitz: a girl whose brother …','Where steht für einen Ort: the village where I live.','Objektpronomen darf entfallen: the film (that) we watched.','Subjektpronomen darf nicht entfallen: the film that won the prize.','Who’s ist who is/has, nicht whose.'],[['I know a boy who speaks Welsh.','Who beschreibt eine Person.'],['This is the woman whose bag we found.','Whose zeigt die Zugehörigkeit.']],'Nach the book passt which/that, nicht what.'),
@@ -29,6 +29,22 @@ for q in questions:
  q['curriculumGrades']=curriculum['question_grades'][original_id]
  if original_id in curriculum['revised_ids']:q['id']=original_id+'-lp56'
 
+# Keep existing question IDs and answer keys when changing only the input control.
+for q in questions:
+ q['type']='input'
+ match=re.search(r'\(([^()]+ / [^()]+)\)[.!?]?$',q['prompt'])
+ if match:
+  options=match.group(1).split(' / ')
+  normal=lambda v: v.strip().replace('’', "'") if q.get('caseSensitive') else v.strip().replace('’', "'").lower()
+  valid=[o for o in options if normal(o) in [normal(a) for a in q['answers']]]
+  if len(valid)==1:
+   q['type']='choice';q['options']=options;q['prompt']=q['prompt'][:match.start()].strip()
+   q['instruction']='Wähle die passende Antwort aus.'
+for q in json.loads((R/'content/varied-exercises.json').read_text()):
+ q.update(year=0,independent=True,level='transfer',source='Neue Übung · Klasse 7',caseSensitive=False)
+ questions.append(q)
+assert len(questions)==196
+
 exams=json.loads((R/'content/exams.json').read_text())
 grammar=[]
 for id,title,sub,forms,examples,trap in chapters:
@@ -38,4 +54,4 @@ for id,title,sub,forms,examples,trap in chapters:
 plan=[['Lerncheck','Finde die Themen, bei denen du noch unsicher bist.','diagnostic',15],['Gegenwart & Vergangenheit','Wiederhole Grundformen und die Vergangenheit.','topic:past',20],['Present perfect verstehen','Vergangene Handlungen und ihr Ergebnis jetzt unterscheiden.','topic:perfect',20],['Fragen sicher bilden','Fragen und kurze Frageanhänge üben.','topic:questions',15],['Können, müssen, dürfen','Modalverben und ihre Ersatzformen festigen.','topic:modals',20],['Vergleichen & Mengen','Übe Steigerung und passende Vergleichswörter.','topic:comparison',15],['Kleine Wörter, klare Sätze','Pronomen und Besitzangaben wiederholen.','topic:pronouns',15],['Gemischte Übungsrunde','Wende dein Wissen in neuen Sätzen an.','mixed',20],['Fehlerwerkstatt','Schau dir offene Fehler an und löse sie erneut.','mistakes',15],['Originaltest 2021','Bearbeite erstmals einen vollständigen Test.','exam:2021',50],['Weitere Generalprobe','Probiere einen anderen Jahrgang unter Zeitbedingungen.','exams',50]]
 data=dict(curriculum=dict(checked=curriculum['checked'],scope=curriculum['scope'],sources=curriculum['sources']),grammar=grammar,questions=questions,plan=[['',*p] for p in plan],years=[dict(year=int(y),listening=e['title'],writing=e['writingTitle'],words=140,page=e['writingPage'],**e['files']) for y,e in sorted(exams.items(),reverse=True)])
 (R/'dist/data.js').write_text('window.LAB_DATA = '+json.dumps(data,ensure_ascii=False,separators=(',',':'))+';\n')
-print('Built 14 chapters, 168 independent exercises and an undated plan.')
+print('Built 14 chapters, 196 independent exercises and an undated plan.')

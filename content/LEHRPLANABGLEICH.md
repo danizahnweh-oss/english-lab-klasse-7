@@ -2,7 +2,7 @@
 
 Stand: 17.09.2026
 
-Maßstab ist der Lernstand am Ende der sechsten Klasse am bayerischen Gymnasium, mit Englisch als erster Fremdsprache ab Klasse 5. Geprüft wurden alle 14 Nachschlagekapitel und die 168 selbst erstellten Aufgaben samt Lösungen und Erklärungen. Die Originaltests 2021–2025 bleiben als historische Prüfungsunterlagen unverändert.
+Maßstab ist der Lernstand am Ende der sechsten Klasse am bayerischen Gymnasium, mit Englisch als erster Fremdsprache ab Klasse 5. Geprüft wurden alle 14 Nachschlagekapitel und die 196 selbst erstellten Aufgaben samt Lösungen und Erklärungen. Die Originaltests 2021–2025 bleiben als historische Prüfungsunterlagen unverändert.
 
 ## Offizielle Quellen
 
@@ -12,7 +12,7 @@ Maßstab ist der Lernstand am Ende der sechsten Klasse am bayerischen Gymnasium,
 
 ## Änderungen
 
-Selbstständige Possessivpronomen (z. B. ours) und Reflexivpronomen (z. B. myself) sind ausdrücklich Klasse 7 zugeordnet und wurden aus dem Übungsbereich entfernt, auch als Nebenanforderung in Vergleichssätzen. Die seit-/seit-langem-Aufgaben mit since/for wurden vorsorglich ersetzt: Klasse 6 nennt beim Present Perfect ausdrücklich den resultativen Gebrauch. Auch Erfahrungssätze und die explizite Regel zur zukünftigen Zeitenfolge nach when wurden auf enger belegte Inhalte umgestellt. Ergänzt wurden Fahrplanzukunft, Fragen mit Präpositionen sowie should, may und might. Insgesamt wurden 14 Aufgaben geändert; Anzahl und Schwierigkeitsstufen bleiben gleich.
+Selbstständige Possessivpronomen (z. B. ours) und Reflexivpronomen (z. B. myself) sind ausdrücklich Klasse 7 zugeordnet und wurden aus dem Übungsbereich entfernt, auch als Nebenanforderung in Vergleichssätzen. Die seit-/seit-langem-Aufgaben mit since/for wurden vorsorglich ersetzt: Klasse 6 nennt beim Present Perfect ausdrücklich den resultativen Gebrauch. Auch Erfahrungssätze und die explizite Regel zur zukünftigen Zeitenfolge nach when wurden auf enger belegte Inhalte umgestellt. Ergänzt wurden Fahrplanzukunft, Fragen mit Präpositionen sowie should, may und might. Beim ersten Abgleich wurden 14 Aufgaben korrigiert. Ergänzend gibt es nun 14 Satzpuzzles und 14 Fehlersuchaufgaben zu denselben Grundlagen, insgesamt 196 Aufgaben in vier Übungsformen.
 
 ## Kapitel
 
@@ -35,6 +35,6 @@ Selbstständige Possessivpronomen (z. B. ours) und Reflexivpronomen (z. B. mysel
 
 ## Grenzen
 
-Die Plattform bleibt eine prüfungsorientierte Auswahl. Sie ersetzt keinen vollständigen Lehrgang für Klasse 5 und 6. Beispielsweise haben Artikel, grundlegende Wortstellung, Imperative, Kurzantworten und Objektsätze mit that noch keine eigenen Übungsreihen. Bei Wortschatz nennt der Lehrplan Bereiche und Beispiele, keine abschließende Liste aller Wörter. Die Zuordnung solcher Übungen ist daher eine didaktische Einordnung, keine Garantie, dass jede Klasse bereits jedes einzelne Wort kennt. Der genaue Unterrichtsstand richtet sich außerdem nach dem verwendeten Lehrwerk und dem Unterricht.
+Die Plattform bleibt eine prüfungsorientierte Auswahl. Sie ersetzt keinen vollständigen Lehrgang für Klasse 5 und 6. Beispielsweise haben Artikel, Imperative, Kurzantworten und Objektsätze mit that noch keine eigenen Übungsreihen. Bei Wortschatz nennt der Lehrplan Bereiche und Beispiele, keine abschließende Liste aller Wörter. Die Zuordnung solcher Übungen ist daher eine didaktische Einordnung, keine Garantie, dass jede Klasse bereits jedes einzelne Wort kennt. Der genaue Unterrichtsstand richtet sich außerdem nach dem verwendeten Lehrwerk und dem Unterricht.
 
-Die vollständige Zuordnung aller 168 Aufgaben und die Liste revidierter Aufgaben stehen in curriculum.json. Alle Originaltest-Dateien blieben unverändert.
+Die Zuordnung der bisherigen 168 Aufgaben und der 28 Ergänzungen sowie die Liste revidierter Aufgaben stehen in curriculum.json. Die neuen Aufgaben sind in varied-exercises.json dokumentiert. Alle Originaltest-Dateien blieben unverändert.
